@@ -1,0 +1,261 @@
+<html>
+
+	<head>
+		<style>
+			.ui-content{
+				text-align: center;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+		<div id="all">
+		<div id="header" data-role="header">
+			<h1>Register</h1>
+		</div>
+		<div id="img">
+		</div>
+		<div id="text">
+		</div>
+		<p>Firstname <input type="text" id="firstName">
+			<span id= "errormsgFirstName">Please enter English characters
+			</span>
+		</p>
+		<p>Lastname <input type="text" id="lastName">
+			<span id= "errormsgLastName">Please enter English characters
+			</span>
+		</p>
+		<p>Birthday: <input type="date" id="birthdayDate">
+			<span id= "errormsgBirthdayDate">Please enter Birthday
+			</span>
+		</p>
+		<p>Gender 
+			<select id = "gender">
+				<option value="Male">male</option>
+				<option value="Female">female</option>
+			</select>
+		</p>
+		<p>Province
+			<select id = "province">
+				<option value="Bangkok">Bangkok</option>
+				<option value="Krabi">Krabi</option>
+				<option value="Kanchanaburi">Kanchanaburi</option>
+				<option value="Kalasin">Kalasin</option>
+				<option value="Kamphaeng Phet">Kamphaeng Phet</option>
+				<option value="Khon Kaen">Khon Kaen</option>
+				<option value="Chanthaburi">Chanthaburi</option>
+				<option value="Chachoengsao">Chachoengsao</option>
+				<option value="Chonburi">Chonburi</option>
+				<option value="Chainat">Chainat</option>
+				<option value="Chaiyaphum">Chaiyaphum</option>
+				<option value="Chumphon">Chumphon</option>
+				<option value="Chiang Mai">Chiang Mai</option>
+				<option value="Chiang Rai">Chiang Rai</option>
+				<option value="Trang">Trang</option>
+				<option value="Trat">Trat</option>
+				<option value="Tak">Tak</option>
+				<option value="Nakhon Nayok">Nakhon Nayok</option>
+				<option value="Nakhon Pathom">Nakhon Pathom</option>
+				<option value="Nakhon Phanom<">Nakhon Phanom</option>
+				<option value="Nakhon Ratchasima">Nakhon Ratchasima</option>
+				<option value="Nakhon Si Thammarat">Nakhon Si Thammarat</option>
+				<option value="Nakhon Sawan">Nakhon Sawan</option>
+				<option value="Nonthaburi">Nonthaburi</option>
+				<option value="Narathiwat">Narathiwat</option>
+				<option value="Nan">Nan</option>
+				<option value="Bueng Kan">Bueng Kan</option>
+				<option value="Buriram">Buriram</option>
+				<option value="Pathum Thani">Pathum Thani</option>
+				<option value="Prachuap Khiri Khan">Prachuap Khiri Khan</option>
+				<option value="Prachinburi">Prachinburi</option>
+				<option value="Pattani">Pattani</option>
+				<option value="Phra Nakhon Si Ayutthaya">Phra Nakhon Si Ayutthaya</option>
+				<option value="Phayao">Phayao</option>
+				<option value="Phang Nga">Phang Nga</option>
+				<option value="Phatthalung">Phatthalung</option>
+				<option value="Phichit">Phichit</option>
+				<option value="Phitsanulok">Phitsanulok</option>
+				<option value="Phetchaburi">Phetchaburi</option>
+				<option value="Phetchabun">Phetchabun</option>
+				<option value="Phrae">Phrae</option>
+				<option value="Phuket">Phuket</option>
+				<option value="Maha Sarakham">Maha Sarakham</option>
+				<option value="Mukdahan">Mukdahan</option>
+				<option value="Mae Hong Son">Mae Hong Son</option>
+				<option value="Yasothon">Yasothon</option>
+				<option value="Yala">Yala</option>
+				<option value="Roi Et">Roi Et</option>
+				<option value="Ranong">Ranong</option>
+				<option value="Rayong">Rayong</option>
+				<option value="Ratchaburi">Ratchaburi</option>
+				<option value="Lopburi">Lopburi</option>
+				<option value="Lampang">Lampang</option>
+				<option value="Lamphun">Lamphun</option>
+				<option value="Loei">Loei</option>
+				<option value="Sisaket">Sisaket</option>
+				<option value="Sakon Nakhon">Sakon Nakhon</option>
+				<option value="Songkhla">Songkhla</option>
+				<option value="Satun">Satun</option>
+				<option value="Samut Prakan">Samut Prakan</option>
+				<option value="Samut Songkhram">Samut Songkhram</option>
+				<option value="Samut Sakhon">Samut Sakhon</option>
+				<option value="Sa Kaeo">Sa Kaeo</option>
+				<option value="Saraburi">Saraburi</option>
+				<option value="Sing Buri">Sing Buri</option>
+				<option value="Sukhothai">Sukhothai</option>
+				<option value="Suphan Buri">Suphan Buri</option>
+				<option value="Surat Thani">Surat Thani</option>
+				<option value="Surin">Surin</option>
+				<option value="Nong Kha">Nong Kha</option>
+				<option value="Nong Bua Lamphu">Nong Bua Lamphu</option>
+				<option value="Ang Thong">Ang Thong</option>
+				<option value="Amnat Charoen">Amnat Charoen</option>
+				<option value="Udon Thani">Udon Thani</option>
+				<option value="Uttaradit">Uttaradit</option>
+				<option value="Uthai Thani">Uthai Thani</option>
+				<option value="Ubon Ratchathani">Ubon Ratchathani</option>
+			</select>
+		</p>
+		 <div data-role="main" class="ui-content">
+			<button id="cancel" class="ui-btn ui-btn-inline ui-corner-all" >Cancel</button>
+			<button id="submit" class="ui-btn ui-btn-inline ui-corner-all" >Submit</button>
+		</div>
+		</div>
+		<script>
+			function isAsciiOnly(str) {
+				for (var i = 0; i < str.length; i++){
+					if ((str.charCodeAt(i) < 65 || str.charCodeAt(i) > 90) && (str.charCodeAt(i) < 97 || str.charCodeAt(i) > 122)){
+						return false;
+					}
+				
+				}
+				return true;
+			}
+			window.onload = function(){
+				$("#errormsgFirstName").hide();
+				$("#errormsgFirstName").css("color", "red");
+				$("#errormsgLastName").hide();
+				$("#errormsgLastName").css("color", "red");
+				$("#errormsgBirthdayDate").hide();
+				$("#errormsgBirthdayDate").css("color", "red");
+			};
+			$(document).ready(function(){
+				$("#cancel").click(function(){
+					$('#firstName').val("");
+					$('#lastName').val("");
+					$('#birthdayDate').val("");
+				});
+				$("#submit").click(function(){
+					var check = 1;
+					if (!isAsciiOnly($("#firstName").val()) || $("#firstName").val().length == 0){
+						check = 0;
+						$("#errormsgFirstName").show();
+					}
+					else{
+						$("#errormsgFirstName").hide();
+					}
+					if (!isAsciiOnly($("#lastName").val()) || $("#lastName").val().length == 0){
+						check = 0;
+						$("#errormsgLastName").show();
+					}
+					else{
+						$("#errormsgLastName").hide();
+					}
+					if ($("#birthdayDate").val().length == 0){
+						check = 0;
+						$("#errormsgBirthdayDate").show();
+					}
+					else{
+						$("#errormsgBirthdayDate").hide();
+					}
+					if (check == 1){
+						var currentdate = new Date();
+						var yearnow = currentdate.getFullYear();
+						var date = $("#birthdayDate").val();
+						var year = date.substring(0, 4);
+						if ((yearnow - year) < 13){
+							alert("Hello " + $("#firstName").val());
+							$("#header").text($("#province").val());
+							$("#header").css("text-align", "center");
+							$("#text").load($("#province").val() + ".txt");
+							$("#text").css("text-align", "center");
+							var img = $("<img />").attr('src', $("#province").val() + ".png")
+							$("#img").append(img);
+							$("#img").css("text-align", "center");
+							$("p").empty();
+							$(".ui-content").empty();
+							
+							
+							
+							$("#all").css("background-image", "url(http://www.3danimationindia.com/wp-content/uploads/2014/05/twitter_bg.jpg)");
+							$("#all").css("background-repeat", "no-repeat");
+							$("#all").css("background-position", "center");
+							
+							
+							$("#all").css("font-family", "cursive");
+							//$("#all").css("background-attachment", "fixed");
+							//$("#all").css("webkit-background-size", "cover");
+							//$("#all").css("-moz-background-size", "cover");
+							//$("#all").css("-o-background-size", "cover");
+							//$("#all").css("background-size", "cover");
+							
+						}
+						
+						else{
+							if ($(gender).val() == "Male"){
+								alert("Hello " + $("#firstName").val());
+								$("#header").text($("#province").val());
+								$("#header").css("text-align", "center");
+								$("#text").load($("#province").val() + ".txt");
+								$("#text").css("text-align", "center");
+								var img = $("<img />").attr('src', $("#province").val() + ".png")
+								$("#img").append(img);
+								$("#img").css("text-align", "center");
+								$("p").empty();
+								$(".ui-content").empty();
+								
+								
+								
+								$("#all").css("background-image", "url(CodeGeass.jpg)");
+								$("#all").css("background-repeat", "no-repeat");
+								$("#all").css("background-position", "center");
+								
+								
+								$("#all").css("font-family", "oblique");
+							}
+							else{
+								alert("Hello " + $("#firstName").val());
+								$("#header").text($("#province").val());
+								$("#header").css("text-align", "center");
+								$("#text").load($("#province").val() + ".txt");
+								$("#text").css("text-align", "center");
+								var img = $("<img />").attr('src', $("#province").val() + ".png")
+								$("#img").append(img);
+								$("#img").css("text-align", "center");
+								$("p").empty();
+								$(".ui-content").empty();
+								
+								
+								
+								$("#all").css("background-image", "url(http://hd-wall-papers.com/images/wallpapers/beautiful-background-pictures/beautiful-background-pictures-20.jpg)");
+								$("#all").css("background-repeat", "no-repeat");
+								$("#all").css("background-position", "center");
+								
+								
+								$("#all").css("font-family", "'Tangerine', serif");
+							}
+
+						}
+
+					}
+				});	
+			});
+		</script>
+	</body>
+
+
+</html>

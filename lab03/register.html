@@ -1,0 +1,279 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Untitled Document</title>
+	<style>
+		span {
+			display:none;
+			color:red;
+			font-size: 75%;
+		} 
+</style>
+	</head>
+
+	<body>
+		<form>
+			<h1>Register</h1>
+			<p>Firstname <input type="text" id="firstName"><span id= "errormsgFirstName">Please enter English characters</span></p>
+			<p>Lastname <input type="text" id="lastName"><span id= "errormsgLastName">Please enter English characters</span></p>
+			Address:
+				<li>House number <input type="text" id="houseNumber"><span id= "errormsgHouseNumber">Ex. 555/182</span><br></li>
+				<li>Street <input type="text" id="streetName"><span id= "errormsgStreetName">Please enter English characters</span><br></li>
+				<li>City <input type="text" id="cityName"><span id= "errormsgCityName">Please enter English characters</span><br></li>
+				<li>Province <input type="text" id="provinceName"><span id= "errormsgProvinceName">Please enter English characters</span><br></li>
+				<li>Zipcode <input type="text" id="zipcodeNumber"><span id= "errormsgZipcodeNumber">Please enter number</span><br></li>
+			<p>Phone number: <input type="text" id="phoneNumber" maxlength="12"><span id= "errormsgPhoneNumber">Please enter number, ex. +66029098737</span></p>
+			<p>Cell phone number: <input type="text" id="cellPhoneNumber" maxlength="13"><span id= "errormsgCellPhoneNumber">Please enter number, ex. +660830778428</span></p>
+			<p>Birthday: <input type="date" id="birthdayDate"><span id= "errormsgBirthdayDate">Please enter Birthday</span></p>
+			<p>Citizenship number <input type="text" id="citizenNumber" maxlength="13"><span id= "errormsgCitizenNumber">Please enter number</span></p>
+			<p>Zodiac Sign <select id = "zodiacSign">
+								<option value="aries">Aries</option>
+								<option value="taurus">Taurus</option>
+								<option value="gemini">Gemini</option>
+								<option value="cancer">Cancer</option>
+								<option value="leo">Leo</option>
+								<option value="virgo">Virgo</option>
+								<option value="libra">Libra</option>
+								<option value="scorpio">Scorpio</option>
+								<option value="sagittarius">Sagittarius</option>
+								<option value="capricorn">Capricorn</option>
+								<option value="aquarius">Aquarius</option>
+								<option value="pisces">Pisces</option>
+						  </select></p>
+			<p>Zodiac Year <select id = "zodiacYear">
+								<option value="rat">Rat</option>
+								<option value="ox">Ox</option>
+								<option value="tiger">Tiger</option>
+								<option value="rabbit">Rabbit</option>
+								<option value="dragon">Dragon</option>
+								<option value="snake">Snake</option>
+								<option value="horse">Horse</option>
+								<option value="goat">Goat</option>
+								<option value="Monkey">Monkey</option>
+								<option value="rooster">Rooster</option>
+								<option value="dog">Dog</option>
+								<option value="pig">Pig</option>
+						  </select></p>
+			<p>Birth Day of Week:<select id = "birthDayofWeek">
+									<option value="monday">Monday</option>
+									<option value="tuesday">Tuesday</option>
+									<option value="wednesday">Wednesday</option>
+									<option value="thursday">Thursday</option>
+									<option value="friday">Friday</option>
+									<option value="saturday">Saturday</option>
+									<option value="sunday">Sunday</option>
+								</select></p>
+			</form>
+		<button onclick="save()">Save</button>
+		<button onclick="cancel()">Cancel</button>
+		<button onclick="submit()">Submit</button>
+		<script>
+			window.onload = loadSave;
+			function loadSave() {
+				var save = document.cookie.split(',');
+				for(var i = 0; i <save.length; i++) {
+					var data = save[i].split("=");
+					if (data.length == 2){
+						document.getElementById(data[0]).value = data[1];
+						
+					}
+				}
+			}
+			function save() {
+				var firstName = document.getElementById("firstName").value;
+				var lastName = document.getElementById("lastName").value;
+				var houseNumber = document.getElementById("houseNumber").value;
+				var streetName = document.getElementById("streetName").value;
+				var cityName = document.getElementById("cityName").value;
+				var provinceName = document.getElementById("provinceName").value;
+				var zipcodeNumber = document.getElementById("zipcodeNumber").value;
+				var phoneNumber = document.getElementById("phoneNumber").value;
+				var cellPhoneNumber = document.getElementById("cellPhoneNumber").value;
+				var birthdayDate = document.getElementById("birthdayDate").value;
+				var citizenNumber = document.getElementById("citizenNumber").value;
+				var zodiacSign = document.getElementById("zodiacSign").value;
+				var zodiacYear = document.getElementById("zodiacYear").value;
+				var birthDayofWeek = document.getElementById("birthDayofWeek").value;
+				document.cookie = "firstName=" + firstName + "," + 
+								  "lastName=" + lastName + "," + 
+								  "houseNumber=" + houseNumber + "," + 
+								  "streetName=" + streetName + "," + 
+								  "cityName=" + cityName + "," + 
+								  "provinceName=" + provinceName + "," + 
+								  "zipcodeNumber=" + zipcodeNumber + "," + 
+								  "phoneNumber=" + phoneNumber + "," + 
+								  "cellPhoneNumber=" + cellPhoneNumber + "," + 
+								  "birthdayDate=" + birthdayDate + "," + 
+								  "citizenNumber=" + citizenNumber + "," +
+								  "zodiacYear=" + zodiacYear + "," +
+								  "zodiacSign=" + zodiacSign + "," +
+								  "birthDayofWeek=" + birthDayofWeek;
+			}
+
+
+			function cancel() {
+				document.getElementById("firstName").value = "";
+				document.getElementById("lastName").value = "";
+				document.getElementById("houseNumber").value = "";
+				document.getElementById("streetName").value = "";
+				document.getElementById("cityName").value = "";
+				document.getElementById("provinceName").value = "";
+				document.getElementById("zipcodeNumber").value = "";
+				document.getElementById("phoneNumber").value = "";
+				document.getElementById("cellPhoneNumber").value = "";
+				document.getElementById("birthdayDate").value = "";
+				document.getElementById("citizenNumber").value = "";
+				document.getElementById("zodiacSign").value = "";
+				document.getElementById("zodiacYear").value = "";
+				document.getElementById("birthDayofWeek").value = "";
+			}
+
+			function submit() {
+				var firstName = document.getElementById("firstName").value;
+				var lastName = document.getElementById("lastName").value;
+				var houseNumber = document.getElementById("houseNumber").value;
+				var streetName = document.getElementById("streetName").value;
+				var cityName = document.getElementById("cityName").value;
+				var provinceName = document.getElementById("provinceName").value;
+				var zipcodeNumber = document.getElementById("zipcodeNumber").value;
+				var phoneNumber = document.getElementById("phoneNumber").value;
+				var cellPhoneNumber = document.getElementById("cellPhoneNumber").value;
+				var birthdayDate = document.getElementById("birthdayDate").value;
+				var citizenNumber = document.getElementById("citizenNumber").value;
+				var zodiacSign = document.getElementById("zodiacSign").value;
+				var zodiacYear = document.getElementById("zodiacYear").value;
+				var birthDayofWeek = document.getElementById("birthDayofWeek").value;
+				var check = 1;
+				if (!isAsciiOnly(firstName) || firstName.length == 0){
+					check = 0;
+					document.getElementById("errormsgFirstName").style.display = "block";
+				}
+				else{
+					document.getElementById("errormsgFirstName").style.display = "none";
+				}
+				if (!isAsciiOnly(lastName) || lastName.length == 0){
+					check = 0;
+					document.getElementById("errormsgLastName").style.display = "block";
+				}
+				else{
+					document.getElementById("errormsgLastName").style.display = "none";
+				}
+				if (!isHouseNumber(houseNumber) || houseNumber.length == 0){
+					check = 0;
+					document.getElementById("errormsgHouseNumber").style.display = "block";
+				}
+				else{
+					document.getElementById("errormsgHouseNumber").style.display = "none";
+				}
+				if (!isAsciiOnly(streetName) || streetName.length == 0){
+					check = 0;
+					document.getElementById("errormsgStreetName").style.display = "block";
+				}
+				else{
+					document.getElementById("errormsgStreetName").style.display = "none";
+				}
+				if (!isAsciiOnly(cityName) || cityName.length == 0){
+					check = 0;
+					document.getElementById("errormsgCityName").style.display = "block";
+				}
+				else{
+					document.getElementById("errormsgCityName").style.display = "none";
+				}
+				if (!isAsciiOnly(provinceName)|| provinceName.length == 0){
+					check = 0;
+					document.getElementById("errormsgProvinceName").style.display = "block";
+				}
+				else{
+					document.getElementById("errormsgProvinceName").style.display = "none";
+				}
+				
+				if (!isZipcodeNumber(zipcodeNumber) || zipcodeNumber.length == 0){
+					check = 0;
+					document.getElementById("errormsgZipcodeNumber").style.display = "block";
+				}
+				else{
+					document.getElementById("errormsgZipcodeNumber").style.display = "none";
+				}
+				if (!isPhoneNumber(phoneNumber) || phoneNumber.length == 0){
+					check = 0;
+					document.getElementById("errormsgPhoneNumber").style.display = "block";
+				}
+				else{
+					document.getElementById("errormsgPhoneNumber").style.display = "none";
+				}
+				if (!isPhoneNumber(cellPhoneNumber) || cellPhoneNumber.length == 0){
+					check = 0;
+					document.getElementById("errormsgCellPhoneNumber").style.display = "block";
+				}
+				else{
+					document.getElementById("errormsgCellPhoneNumber").style.display = "none";
+				}
+				if (birthdayDate.length ==  0){
+					check = 0;
+					document.getElementById("errormsgBirthdayDate").style.display = "block";
+				}
+				else{
+					document.getElementById("errormsgBirthdayDate").style.display = "none";
+				}
+				if (!isZipcodeNumber(citizenNumber) || citizenNumber.length == 0){
+					check = 0;
+					document.getElementById("errormsgCitizenNumber").style.display = "block";
+				}
+				else{
+					document.getElementById("errormsgCitizenNumber").style.display = "none";
+				}
+				if (check == 1){
+					console.log(birthdayDate.length);
+					save();
+					alert(document.cookie);
+					window.location = "information.html";
+				}
+				
+			}
+			function isPhoneNumber(str){
+				for (var i = 0; i < str.length; i++){
+					if ((str.charCodeAt(i) < 48 || str.charCodeAt(i) > 57) && (str.charCodeAt(i) != 43)){
+						return false;
+					}
+				}
+				return true;			
+			}
+			
+			function isZipcodeNumber(str){
+				for (var i = 0; i < str.length; i++){
+					//console.log(str.charCodeAt(i));
+					if (str.charCodeAt(i) < 48 || str.charCodeAt(i) > 57){
+						return false;
+					}
+				}
+				return true;
+			}
+			
+			function isHouseNumber(str){
+				for (var i = 0; i < str.length; i++){
+					if ((str.charCodeAt(i) < 48 || str.charCodeAt(i) > 57) && (str.charCodeAt(i) != 47)){
+						return false;
+					}
+				}
+				return true;
+			}
+			
+			
+			function isAsciiOnly(str) {
+				for (var i = 0; i < str.length; i++){
+					if ((str.charCodeAt(i) < 65 || str.charCodeAt(i) > 90) && (str.charCodeAt(i) < 97 || str.charCodeAt(i) > 122)){
+						return false;
+					}
+				
+				}
+				return true;
+			}
+
+
+
+
+
+		</script>
+
+	</body>
+</html>

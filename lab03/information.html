@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Untitled Document</title>
+	</head>
+
+	<body>
+		<form>
+			<h1>Information</h1>
+			Firstname <input type="text" id="firstName" disabled="disabled"><br>
+			Lastname <input type="text" id="lastName" disabled="disabled"><br>
+			Address:
+				<li>House number <input type="text" id="houseNumber" disabled="disabled"><br></li>
+				<li>Street <input type="text" id="streetName" disabled="disabled"><br></li>
+				<li>City <input type="text" id="cityName" disabled="disabled"><br></li>
+				<li>Province <input type="text" id="provinceName" disabled="disabled"><br></li>
+				<li>Zipcode <input type="text" id="zipcodeNumber" disabled="disabled"><br></li>
+			Phone number: <input type="text" id="phoneNumber" maxlength="12" disabled="disabled"><br>
+			Cell phone number: <input type="text" id="cellPhoneNumber" maxlength="13" disabled="disabled"><br>
+			Birthday: <input type="date" id="birthdayDate" disabled="disabled"><br>
+			Citizenship number <input type="text" id="citizenNumber" maxlength="13" disabled="disabled"><br>
+			Zodiac Sign <select id = "zodiacSign" disabled="disabled">
+								<option value="aries">Aries</option>
+								<option value="taurus">Taurus</option>
+								<option value="gemini">Gemini</option>
+								<option value="cancer">Cancer</option>
+								<option value="leo">Leo</option>
+								<option value="virgo">Virgo</option>
+								<option value="libra">Libra</option>
+								<option value="scorpio">Scorpio</option>
+								<option value="sagittarius">Sagittarius</option>
+								<option value="capricorn">Capricorn</option>
+								<option value="aquarius">Aquarius</option>
+								<option value="pisces">Pisces</option>
+						  </select><br>
+			Zodiac Year <select id = "zodiacYear" disabled="disabled">
+								<option value="rat">Rat</option>
+								<option value="ox">Ox</option>
+								<option value="tiger">Tiger</option>
+								<option value="rabbit">Rabbit</option>
+								<option value="dragon">Dragon</option>
+								<option value="snake">Snake</option>
+								<option value="horse">Horse</option>
+								<option value="goat">Goat</option>
+								<option value="Monkey">Monkey</option>
+								<option value="rooster">Rooster</option>
+								<option value="dog">Dog</option>
+								<option value="pig">Pig</option>
+						  </select><br>
+			Birth Day of Week:<select id = "birthDayofWeek" disabled="disabled">
+									<option value="monday">Monday</option>
+									<option value="tuesday">Tuesday</option>
+									<option value="wednesday">Wednesday</option>
+									<option value="thursday">Thursday</option>
+									<option value="friday">Friday</option>
+									<option value="saturday">Saturday</option>
+									<option value="sunday">Sunday</option>
+								</select><br>
+		</form>
+
+		<script>
+			window.onload = loadSave;
+			function loadSave() {
+				var save = document.cookie.split(',');
+				for(var i = 0; i <save.length; i++) {
+					var data = save[i].split("=");
+					if (data.length == 2){
+						document.getElementById(data[0]).value = data[1];
+					}
+				}
+			}
+			function disableField(id) {
+				document.getElementById(id).disabled = true;
+			}
+		</script>
+	</body>
+</html>
