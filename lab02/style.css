@@ -1,0 +1,191 @@
+header{
+	height: 100vh;
+    background: url(https://unsplash.imgix.net/photo-1414490929659-9a12b7e31907);
+	background-size: cover;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+
+	/*font-family: 'Anton', serif;*/
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753; 
+	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+
+	margin-top: 0; 
+	text-align: justify;
+	width: 800px;
+	
+  	margin: 0 auto 20px;
+	
+	}
+h3 { 
+	width: 800px;
+	margin: 0 auto 20px;
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+	}
+.page-wrapper { 
+	
+	position: relative;
+	}
+.intro { 
+	min-width: 470px;
+	width: 100%;
+	}
+.sidebar {
+	display: flex;
+	color: #333;
+	font-weight: normal;
+	position: absolute;
+	top: 100vh;
+	width: 221px;
+}
+
+.summary{
+	
+}
+.sidebar .wrapper { 
+	font: 10px verdana, sans-serif; 
+	background: transparent url(http://oknation.nationtv.tv/blog/home/album_data/611/14611/album/25195/images/223291.png) top left repeat-y; 
+	padding: 10px; 
+	margin-top: 100px; 
+	width: 135px; 
+	}
+.sidebar h3.select { 
+	background: transparent url(https://www.mx7.com/i/b56/VQtKpD.png) no-repeat top left; 
+	margin: 10px 0 5px 10px; 
+	width: 97px; 
+	height: 17px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.archives { 
+	background: transparent url(https://www.mx7.com/i/c37/7LIqPX.png) no-repeat top left; 
+	margin: 25px 0 5px 10px; 
+	width:57px; 
+	height: 17px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.sidebar h3.resources { 
+	background: transparent url(https://www.mx7.com/i/196/nlEJs5.png) no-repeat top left; 
+	margin: 25px 0 5px 10px; 
+	width:63px; 
+	height: 17px; 
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+.preamble {
+	
+	clear: right; 
+	}
+
+.explanation{
+	
+}
+.participation{
+	
+}
+.supporting {	
+	margin-bottom: 40px;
+}
+.benefits{
+	
+}
+.requirements{
+	
+}
+
+footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+footer li {
+    float: left;
+}
+
+footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    background-color: #111;
+}
+
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em; 
+	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
+	display: block; 
+	padding-top: 5px; 
+	padding-left: 10px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color: #990000;
+	}
+.sidebar li a:visited {
+	color: #999900;
+	}
+view-css{
+	float: left;
+}
+css-resources{
+}
+zen-faq{
+}
+zen-submit{
+}
+zen-translations{
+}
+
+
+.zen-validate-html{
+
+}
+.zen-validate-css{
+}
+.zen-license{
+}
+.zen-accessibility{
+}
+.zen-github{
+}
+
