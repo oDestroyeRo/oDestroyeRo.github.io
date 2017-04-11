@@ -10,17 +10,88 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+      .bg-1 { 
+          background-color: #1abc9c;
+          color: #ffffff;
+      }
+      .bg-2 { 
+          background-color: #474e5d;
+          color: #ffffff;
+      }
+      .bg-3 { 
+          background-color: #ffffff;
+          color: #555555;
+      }
+      .bg-4 {
+          background-color: #2f2f2f;
+          color: #ffffff;
+      }
+      .container-fluid {
+          padding-top: 70px;
+          padding-bottom: 70px;
+      }
+      .navbar {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border: 0;
+          border-radius: 0;
+          margin-bottom: 0;
+          font-size: 12px;
+          letter-spacing: 5px;
+      }
+      .navbar-nav  li a:hover {
+          color: #1abc9c !important;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <h2>Home Page</h2>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Me</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#who">Who</a></li>
+            <li><a href="#education">My Education</a></li>
+            <li><a href="#assignment">My Assignment</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid bg-1 text-center" id="who">
+      <h2>Who am I?</h2>
+      <img src="img/profile.jpg" class="img-circle" alt="profile" width="350" height="350">
+      <h4>Name: Natpakan Wongchamnan</h4>
+      <h4>Birthday: 4 september 1995</h4>
+      <h4>Gender: Male</h4>
+      <h4>Email: oDestroyeRo@hotmail.com</h4>
+    </div>
+    <div class="container-fluid bg-2 text-center" id="education">
+      <h3>My Education</h3>
+      <h4>May 2014 – Present Kasetsart University(Bangkhen), Thailand</h4>
+      <p>Bachelor's Degree in Computer Science, Major Computer Science</p>
+      <h4>May 2011 – May 2014 Chonprathanwittaya School, Nonthaburi, Thailand</h4>
+    </div>
+    <div class="container-fluid bg-3 text-center" id="assignment">    
+      <h3>My Assignment</h3><br>
       <a class="btn btn-default" href="lab01/lab01.html" role="button">Lab01</a>
       <a class="btn btn-default" href="lab02/lab02.html" role="button">Lab02</a>
       <a class="btn btn-default" href="lab03/register.html" role="button">Lab03</a>
       <a class="btn btn-default" href="lab04/labjquery.html" role="button">Lab04</a>
       <a class="btn btn-default" href="lab05/labphp.html" role="button">Lab05</a>
       <a class="btn btn-default" href="lab06/lab06.rar" role="button">Lab06</a>
-      <a class="btn btn-default" href="lab07/lab07.rar" role="button">Lab07</a>
+      <a class="btn btn-default" href="lab07/lab07.rar" role="button">Lab07</a><br>
     </div>
+    <footer class="container-fluid bg-4 text-center">
+    </footer>
+
+
   </body>
 </html>
