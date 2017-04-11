@@ -23,6 +23,10 @@
           background-color: #ffffff;
           color: #555555;
       }
+      .bg-4 {
+          background-color: #2f2f2f;
+          color: #ffffff;
+      }
       .container-fluid {
           padding-top: 70px;
           padding-bottom: 70px;
@@ -54,26 +58,28 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">WHO</a></li>
-            <li><a href="#">WHAT</a></li>
-            <li><a href="#">WHERE</a></li>
+            <li><a href="#who">Who</a></li>
+            <li><a href="#education">My Education</a></li>
+            <li><a href="#assignment">My Assignment</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container-fluid bg-1 text-center">
-      <h3>Who am I?</h3>
+    <div class="container-fluid bg-1 text-center" id="who">
+      <h2>Who am I?</h2>
       <img src="img/profile.jpg" class="img-circle" alt="profile" width="350" height="350">
-      <h3>I'm a student</h3>
+      <h4>Name: Natpakan Wongchamnan</h4>
+      <h4>Birthday: 4 september 1995</h4>
+      <h4>Gender: Male</h4>
+      <h4>Email: oDestroyeRo@hotmail.com</h4>
     </div>
-    <div class="container-fluid bg-2 text-center">
-      <h3>What Am I?</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      <a href="#" class="btn btn-default btn-lg">
-        <span class="glyphicon glyphicon-search"></span> Search
-      </a>
+    <div class="container-fluid bg-2 text-center" id="education">
+      <h3>My Education</h3>
+      <h4>May 2014 – Present Kasetsart University(Bangkhen), Thailand</h4>
+      <p>Bachelor's Degree in Computer Science, Major Computer Science</p>
+      <h4>May 2011 – May 2014 Chonprathanwittaya School, Nonthaburi, Thailand</h4>
     </div>
-    <div class="container-fluid bg-3 text-center">    
+    <div class="container-fluid bg-3 text-center" id="assignment">    
       <h3>My Assignment</h3><br>
       <a class="btn btn-default" href="lab01/lab01.html" role="button">Lab01</a>
       <a class="btn btn-default" href="lab02/lab02.html" role="button">Lab02</a>
@@ -83,6 +89,9 @@
       <a class="btn btn-default" href="lab06/lab06.rar" role="button">Lab06</a>
       <a class="btn btn-default" href="lab07/lab07.rar" role="button">Lab07</a><br>
     </div>
+    <footer class="container-fluid bg-4 text-center">
+    </footer>
+
 
   </body>
 </html>
